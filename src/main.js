@@ -4,11 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import iView from 'iview';
-import Swal from 'common/plugin/swal'
-import subscribe from 'common/plugin/subscribe'
+import Swal from 'common/plugin/swal' //弹框组件
+import subscribe from 'common/plugin/subscribe'//订阅发布模式
 import store from './vuex/index'
-import Session from 'common/plugin/Session.js'
-import {isEmpty} from 'common/util/common'
+import Session from 'common/plugin/Session.js'//操作本地存储
+import {isEmpty} from 'common/util/common' //工具函数 判断对象是不是为空
 Vue.config.productionTip = false
 Vue.use(iView)
 Vue.use(Swal)

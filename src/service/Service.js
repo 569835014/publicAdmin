@@ -142,7 +142,7 @@ class Service {
       axios.interceptors.request.use(
         config => {
           if (this.vm.$store.state.userInfo.token && config.authorization) {  // 判断是否存在token，如果存在的话，则每个http header都加上token
-            config.headers['X-ZX-TOKEN'] = `${this.vm.$store.state.userInfo.token}`;
+            config.headers['X-ZX-TOKEN'] = `${this.vm.$store.state.userInfo.token}`;//公司约定的token方式
           }
           return config;
         },
