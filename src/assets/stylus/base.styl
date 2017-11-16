@@ -1,0 +1,15 @@
+@import "./var.styl"
+//app头部大小
+$top-h=72px
+//侧边菜单宽度
+$app-left-w=200px
+//过滤栏高度
+$app-filter-h=56px
+//
+$border-color=#d7dde4
+
+content(isHeight = true)
+  if isHeight
+    padding-top $top-h+$app-filter-h;
+  else
+    padding-top $top-h;
